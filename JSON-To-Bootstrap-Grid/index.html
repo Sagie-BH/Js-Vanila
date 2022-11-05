@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Bootstrap Json</title>
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Bootstrap => Json</h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p class="lead">
+                        Json Object To Bootsrap Grid HomeWork
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row" id="display-div">
+            <div id='input-container' class="col-lg-4">
+                <form class="needs-validation col-lg-4 col-md-12 offset-xl-3 offset-lg-2" id="validateForm" novalidate onsubmit="return false">
+                    <div class="row align-items-center">
+
+
+                        <div class="form-group col-10 col-sm-6 col-md-4 col-lg-12">
+                            <label for="objId" class="control-label">ID</label>
+                            <input class="form-control userInput" type="text" id="objId" placeholder="ID" />
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please submit a valid ID.
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group col-10 col-sm-6 col-md-4 col-lg-12">
+                            <label for="objName" class="control-label">Full Name</label>
+
+                            <input class="form-control userInput" type="text" id="objName" placeholder="First And Last Name" />
+
+                            <div class="valid-feedback">
+                                Nice...!
+                            </div>
+
+                            <div class="invalid-feedback">
+                                Please submit a valid full name.
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-10 col-sm-6 col-md-4 col-lg-12">
+                            <label for="objEmail" class="control-label">Email</label>
+                            <input class="form-control userInput" type="email" id="objEmail" placeholder="Email address" />
+                            <div class="valid-feedback">
+                                Now that's an email address
+                            </div>
+                            <div class="invalid-feedback">
+                                Please submit a valid email.
+                            </div>
+                        </div>
+
+
+                        <div class="col-10 col-sm-6 col-md-4 col-lg-12" id="courses-selection">
+                            <select class="form-control userInput" id="objCourse">
+                            <option value="" disabled selected>Courses...</option>
+                            <option>C#</option>
+                            <option>JS</option>
+                            <option>JAVA</option>
+                            <option>Paython</option>
+                            <option>C++</option>
+                        </select>
+                            <div class="valid-feedback">
+                                Good course!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please Choose a course.
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-10 col-sm-6 col-md-4 col-lg-12">
+                            <input class="form-control userInput" type="number" placeholder="Grade" min="0" max="100" id="objGrade">
+                            <div class="valid-feedback">
+                                Looks Ok!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please Choose a grade.
+                            </div>
+                        </div>
+
+
+                        <div class="form-check">
+                            <label class="form-check-label" for="isActive">
+                            Active?
+                        </label>
+                            <input class="form-check-input userInput" type="checkbox" value="" id="isActive">
+                            <div class="valid-feedback">
+                                Checked!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please Check the box.
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-10  col-10 col-sm-6 col-md-4 col-lg-12" id="inputDate">
+                            <input class="form-control userInput" type="datetime-local" id="datetime-input">
+                            <div class="valid-feedback">
+                                Great!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please Choose a date.
+                            </div>
+                        </div>
+
+
+                        <div class="col-10 col-sm-6 col-md-4 offset-md-4 col-lg-12 offset-lg-0">
+                            <button type="submit" class="mybtn my-btn-start" id="btnSubmit">Submit</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-md-4 offset-lg-1 offset-md-2" id="objDataTableDiv"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div id="quizGrid" class="grid animated bounceInLeft">
+        <img id="joker" src="https://freepngimg.com/save/9886-batman-joker-smile-vector-png/500x500" alt="">
+        </img>
+        <div id="quiz">
+            <h1>Joker Quiz</h1>
+            <hr>
+            <form id="contact-form" class="animated">
+                <label>User Name</label>
+                <input type="text" name="name" id="name" required>
+                <label>Email Adress</label>
+                <input type="email" name="name" id="email" required>
+                <button id="submitBtn">Submit</button>
+            </form>
+            <div id="question-area" class="hide">
+                <p id="question"></p>
+                <div id="btn-grid" class="buttons"></div>
+            </div>
+            <hr>
+            <footer id="progress-area" class="hide">
+                <p id="progress"></p>
+                <div class="nav-buttons" id="goBack">Back</div>
+                <div class="nav-buttons" id="goNext">Next</div>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="/app.js"></script>
+</body>
+
+</html>
